@@ -1,0 +1,46 @@
+@import "svg";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$fontfamily: "Gill Sans", sans-serif;
+$fontimpact: Impact, Charcoal, sans-serif;
+
+body {
+  font-family: $fontfamily;
+  font-size: 16px;
+  font-weight: lighter;
+  overflow-x: hidden;
+  color: black;
+}
+
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+$mediaphonelandscape: 376px;
+$mediatablet: 735px;
+$mediatabletlandscape: 767px;
+$mediadesktop: 1023px;
+$mediadesktoplarge: 1919px;
+
+// Animation configs. Dependency: animate.css.
+$transitionfadein: opacity 3s ease;
+
+$fadinduration: 3s;
+.animate__animated.animate__fadeIn {
+  --animate-duration: $fadinduration;
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

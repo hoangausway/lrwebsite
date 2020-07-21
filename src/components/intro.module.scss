@@ -1,0 +1,99 @@
+@import "../styles/theme-dark.scss";
+
+.intro {
+  margin-top: 3rem;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  background-color: $intro-color-bg;
+  background-image: url('../img/' + $intro-right-bottom-img);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-attachment: scroll;
+}
+
+.intro-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 20;
+  background-color: $intro-color-bg;
+  background-image: url('../img/' + $lr-logo-lights);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: scroll;
+  --animate-duration: 5s;
+}
+
+.intro-msg {
+  font-family: $fontimpact;
+  font-size: 10vw;
+  font-weight: bold;
+  color: $intro-msg-color;
+  position: absolute;
+  top: $top-intro-align;
+  left: $left-intro-align;
+  z-index: 10;
+}
+
+.intro-words {
+  width: 70vw;
+  height: auto;
+  position: absolute;
+  bottom: 47vh;
+  left: 15vw;
+}
+
+@media (min-width: $mediaphonelandscape) { // 376
+  .intro {
+    background-size: 50vw auto;
+  }
+  .intro-msg {
+    font-size: 8vw;
+    color: pink;
+  }
+  .intro-words {
+    width: 40%;
+    bottom: 0;
+    left: 2vw;
+  }
+}
+
+@media (min-width: $mediatablet) { // 735
+  .intro {
+    background-size: 50vw auto;
+  }
+  .intro-msg {
+    font-size: 8vw;
+    color: yellow;
+  }
+  .intro-words {
+    width: 40%;
+    bottom: 0;
+    left: 2vw;
+  }
+}
+
+@media (min-width: $mediatabletlandscape) { // 767
+  .intro {
+    background-size: 50vw auto;
+  }
+  .intro-msg {
+    font-size: 8vw;
+    color: green;
+  }
+  .intro-words {
+    width: 25%;
+    bottom: 0;
+    left: 7vw;
+  }
+}
+
+@media (min-width: $mediadesktoplarge) { // 1919px
+  .intro-msg {
+    font-size: 6vw;
+    color: cyan;
+  }
+}

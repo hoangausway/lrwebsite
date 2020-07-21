@@ -1,0 +1,172 @@
+@import "../styles/theme-dark.scss";
+
+.foods {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  background-color: $intro-color-bg;
+  // @include bg-svg($foods-right-bottom-svgcode);
+  background-image: url("../img/" + $foods-right-bottom-img);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-attachment: scroll;
+}
+
+.foods-topright-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: auto;
+}
+
+// foods-msg fadein
+.foods-msg {
+  font-family: $fontimpact;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $foods-msg-color;
+  position: absolute;
+  top: $top-left-align;
+  left: $top-left-align;
+}
+
+.foods-bottom-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.foods-middle-cards {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+}
+
+.foods-more {
+  display: inline-block;
+  position: absolute;
+  left: $top-left-align;
+  bottom: 6rem;
+  z-index: 200;
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $foods-more-color;
+}
+
+/* Animate cards */
+.card1 {
+  width: 40vw;
+  position: relative;
+}
+
+.card2 {
+  width: 40vw;
+  position: relative;
+}
+
+.card3 {
+  width: 40vw;
+  position: relative;
+}
+
+.card4 {
+  width: 40vw;
+  position: relative;
+}
+
+.card5 {
+  width: 40vw;
+  position: relative;
+}
+
+.card6 {
+  width: 40vw;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+}
+
+@media (min-width: $mediaphonelandscape) {
+  // 376px
+  .foods {
+    background-size: 50% auto;
+  }
+  .foods-msg {
+    top: 0.1vw;
+    font-size: 4rem;
+  }
+  .foods-topright-img {
+    width: 40vw;
+  }
+  .foods-middle-cards {
+    top: 30vh;
+    left: 10vw;
+  }
+  .card-image {
+    width: 78%;
+  }
+
+  a.foods-more {
+    bottom: 4rem;
+  }
+}
+
+@media (min-width: $mediatablet) {
+  // 735px
+  .foods {
+    background-size: 50% auto;
+  }
+  .foods-msg {
+    top: 0.1vw;
+    font-size: 5rem;
+  }
+  .foods-topright-img {
+    width: 40vw;
+  }
+  .foods-middle-cards {
+    top: 60vh;
+    left: 10vw;
+  }
+  .card-image {
+    width: 60%;
+  }
+
+  a.foods-more {
+    bottom: 5rem;
+  }
+}
+
+@media (min-width: $mediatabletlandscape) {
+  // 767px
+  .foods-msg {
+    top: 0.1vw;
+    font-size: 5rem;
+  }
+  .foods-middle-cards {
+    top: 45vh;
+  }
+
+  a.foods-more {
+    bottom: 6rem;
+  }
+}
+
+@media (min-width: $mediadesktoplarge) {
+  // 1919px
+  .foods-msg {
+    top: 0.1vw;
+    font-size: 4rem;
+  }
+
+  a.foods-more {
+    bottom: 7rem;
+  }
+}

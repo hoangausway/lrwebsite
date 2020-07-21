@@ -1,0 +1,88 @@
+@import "../styles/theme-dark.scss";
+
+.header {
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  transition: height 0.5s ease-in-out;
+  // height: 3rem; // to be set as style in code for animation
+}
+
+$toggle_height: 100vh;
+
+.navList {
+  opacity: 0.95;
+  background-color: $color-accent-dark;
+  width: 100%;
+  height: $toggle_height;
+  padding: 0.5rem 1rem;
+  a {
+    display: block;
+    text-align: left;
+    height: 2rem;
+    padding: 0.2rem;
+    color: $color-fg;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 3rem;
+  background-color: $color-nav-bg;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.2rem;
+  .nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+    .switcher {
+      padding-left: 3rem;
+      position: relative;
+      &:before {
+        content: "\2261";
+        font-size: 4rem;
+        color: $color-nav-switcher;
+        @include position-center;
+        padding-left: 1rem;
+        padding-bottom: 0.2rem;
+      }
+    }
+    a {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('../img/lr-icon.svg');
+      width: 6rem;
+      height: 100%;
+      margin-left: 0.7rem;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    a {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('../img/menu-download.svg');
+      width: 5rem;
+      height: 100%;
+      margin-right: 0.5rem;
+    }
+  }
+}

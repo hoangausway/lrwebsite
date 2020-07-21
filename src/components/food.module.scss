@@ -1,0 +1,239 @@
+@import "../styles/theme-dark.scss";
+
+$lineheight: 3rem;
+
+.food.first {
+  margin-top: 3rem;
+}
+
+.food {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $food-color-bg;
+
+  // defaul: right arrangement
+  .cat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3rem;
+    line-height: $lineheight;
+    color: $food-cat-color;
+    transform-origin: 0 $lineheight;
+    transform: rotate(90deg) translateX(-$lineheight);
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: auto;
+  }
+
+  .desc {
+    z-index: 1;
+    font-size: 1.2rem;
+    color: $food-desc-color;
+    width: 60vw;
+    padding: $top-left-align 1vw 1vw $top-left-align;
+    text-align: left;
+  }
+
+  .flavours {
+    z-index: 10;
+    position: absolute;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw;
+    padding-left: $top-left-align;
+    transition: $transitionfadein;
+    font-size: 1rem;
+    color: $food-flavours-color;
+    &:before {
+      content: "f l a v o u r s";
+      font-weight: bold;
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-style: wavy;
+      // letter-spacing: 7px;
+    }
+  }
+
+  .contents {
+    background-color: $food-flavours-contents-bg;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    text-align: left;
+  }
+
+  .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+  }
+}
+// left arrangement
+.foodleft {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $food-color-bg;
+
+  // defaul: right arrangement
+  .cat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3rem;
+    line-height: $lineheight;
+    color: $food-cat-color;
+    transform-origin: 0 $lineheight;
+    transform: rotate(90deg) translateX(-$lineheight);
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: auto;
+  }
+
+  .desc {
+    z-index: 1;
+    font-size: 1.2rem;
+    color: $food-desc-color;
+    width: 60vw;
+    padding: $top-left-align 1vw 1vw $top-left-align;
+    text-align: left;
+  }
+
+  .flavours {
+    z-index: 10;
+    position: absolute;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw;
+    padding-left: $top-left-align;
+    transition: $transitionfadein;
+    font-size: 1rem;
+    color: $food-flavours-color;
+    &:before {
+      content: "f l a v o u r s";
+      font-weight: bold;
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-style: wavy;
+      // letter-spacing: 7px;
+    }
+  }
+
+  .contents {
+    background-color: $food-flavours-contents-bg;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    text-align: left;
+  }
+
+  .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+  }
+}
+.foodleft {
+  .cat {
+    transform: rotate(90deg) translateX(-$lineheight) translateY(-100vw)
+      translateY($lineheight);
+  }
+  .image {
+    left: 0;
+    transform: scaleX(-1); // temp
+  }
+  .desc {
+    transform: translateX(40vw);
+    padding: $top-left-align $top-left-align 1vw 1vw;
+    text-align: right;
+  }
+  .flavours {
+    align-items: flex-end;
+    transform: translateX(43vw);
+  }
+  .contents {
+    text-align: right;
+    margin-right: -1rem;
+    padding-right: 1rem;
+  }
+}
+
+// @media
+@media (min-width: $mediaphonelandscape) {
+  // 376px
+  .desc[data-scroll] {
+    font-size: 1.2rem;
+  }
+  .food-flavours[data-scroll] {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: $mediatablet) {
+  // 735px
+  .desc[data-scroll] {
+    font-size: 2rem;
+  }
+  .food-flavours[data-scroll] {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: $mediatabletlandscape) {
+  // 767px
+  .desc[data-scroll] {
+    font-size: 6rem;
+  }
+  .food-flavours[data-scroll] {
+    font-size: 1.5rem;
+  }
+  &.food--left {
+    .flavours {
+      transform: translateX(43vw);
+    }
+  }
+}
+
+@media (min-width: $mediadesktoplarge) {
+  // 1919px
+  .desc[data-scroll] {
+    font-size: 2.5rem;
+  }
+  .food-flavours[data-scroll] {
+    font-size: 1.5rem;
+  }
+}
