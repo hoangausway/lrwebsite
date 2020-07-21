@@ -1,7 +1,7 @@
 ---
 active: "yes"
 order: "05"
-group: "LA COFFEE"
+group: "LACOFFEE"
 name: "COFFEE"
 desc: "Est voluptate in sit enim. Lorem et veniam anim nisi."
 flavours: "viet coffee, espresso, cappuccino, late, flat white, mocha, hot chocolate, etc."
