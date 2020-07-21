@@ -1,10 +1,6 @@
 @import "../styles/theme-dark.scss";
 
-$lineheight: 3rem;
-
-.food.first {
-  margin-top: 3rem;
-}
+$lineheight: 4rem;
 
 .food {
   overflow: hidden;
@@ -167,6 +163,7 @@ $lineheight: 3rem;
     height: auto;
   }
 }
+
 .foodleft {
   .cat {
     transform: rotate(90deg) translateX(-$lineheight) translateY(-100vw)
@@ -192,48 +189,70 @@ $lineheight: 3rem;
   }
 }
 
-// @media
-@media (min-width: $mediaphonelandscape) {
-  // 376px
-  .desc[data-scroll] {
-    font-size: 1.2rem;
-  }
-  .food-flavours[data-scroll] {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: $mediatablet) {
-  // 735px
-  .desc[data-scroll] {
-    font-size: 2rem;
-  }
-  .food-flavours[data-scroll] {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: $mediatabletlandscape) {
-  // 767px
-  .desc[data-scroll] {
-    font-size: 6rem;
-  }
-  .food-flavours[data-scroll] {
-    font-size: 1.5rem;
-  }
-  &.food--left {
+.food,
+.foodleft {
+  // @media
+  @media (min-width: $mediaphonelandscape) {
+    // 376px
+    .cat {
+      font-size: 3rem;
+    }
+    .desc {
+      font-size: 1.3rem;
+    }
     .flavours {
-      transform: translateX(43vw);
+      font-size: 1.3rem;
+    }
+    .contents {
+      font-size: 1.3rem;
     }
   }
-}
 
-@media (min-width: $mediadesktoplarge) {
-  // 1919px
-  .desc[data-scroll] {
-    font-size: 2.5rem;
+  @media (min-width: $mediatablet) {
+    // 735px
+    .cat {
+      font-size: 4rem;
+    }
+    .desc {
+      font-size: 1.5rem;
+    }
+    .flavours {
+      font-size: 1.5rem;
+    }
+    .contents {
+      font-size: 1.5rem;
+    }
   }
-  .food-flavours[data-scroll] {
-    font-size: 1.5rem;
+
+  @media (min-width: $mediatabletlandscape) {
+    // 767px
+    .cat {
+      font-size: 5rem;
+    }
+    .desc {
+      font-size: 2.2rem;
+    }
+    .flavours {
+      font-size: 1.8rem;
+    }
+    .contents {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: $mediadesktoplarge) {
+    // 1919px
+    .cat {
+      font-size: 5rem;
+    }
+    .desc {
+      font-size: 2.5rem;
+    }
+    .flavours {
+      font-size: 2rem;
+    }
+    .contents {
+      font-size: 2rem;
+    }
   }
 }

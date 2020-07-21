@@ -53,3 +53,68 @@
   color: $sayso-color-who;
   padding-top: 0.8rem;
 }
+
+  // @media
+  @media (min-width: $mediaphonelandscape) {
+    // 376px
+    .title {
+      font-size: 3rem;
+    }
+    .quotes {
+      width: 50%;
+    }
+    .say {
+      font-size: 1.4rem;
+    }
+    .who {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: $mediatablet) {
+    // 735px
+    .title {
+      font-size: 3rem;
+    }
+    .quotes {
+      width: 50%;
+    }
+    .say {
+      font-size: 1.4rem;
+    }
+    .who {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: $mediatabletlandscape) {
+    // 767px
+    .title {
+      font-size: 3rem;
+    }
+    .quotes {
+      width: 50%;
+    }
+    .say {
+      font-size: 1.4rem;
+    }
+    .who {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: $mediadesktoplarge) {
+    // 1919px
+    .title {
+      font-size: 3rem;
+    }
+    .quotes {
+      width: 50%;
+    }
+    .say {
+      font-size: 1.4rem;
+    }
+    .who {
+      font-size: 1.2rem;
+    }
+  }

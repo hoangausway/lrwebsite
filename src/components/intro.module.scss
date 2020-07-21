@@ -1,7 +1,7 @@
 @import "../styles/theme-dark.scss";
 
 .intro {
-  margin-top: 3rem;
+  // margin-top: 3rem;
   overflow: hidden;
   height: 100vh;
   position: relative;
@@ -82,8 +82,8 @@
     font-size: 8vw;
   }
   .intro-words {
-    width: 25%;
-    bottom: 0;
+    width: 40%;
+    bottom: 3rem;
     left: 7vw;
   }
 }

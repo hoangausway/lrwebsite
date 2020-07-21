@@ -59,33 +59,7 @@
   color: $foods-more-color;
 }
 
-/* Animate cards */
-.card1 {
-  width: 40vw;
-  position: relative;
-}
-
-.card2 {
-  width: 40vw;
-  position: relative;
-}
-
-.card3 {
-  width: 40vw;
-  position: relative;
-}
-
-.card4 {
-  width: 40vw;
-  position: relative;
-}
-
-.card5 {
-  width: 40vw;
-  position: relative;
-}
-
-.card6 {
+.card {
   width: 40vw;
   position: relative;
 }
@@ -113,9 +87,8 @@
   .card-image {
     width: 78%;
   }
-
-  a.foods-more {
-    bottom: 4rem;
+  .foods-more {
+    font-size: 1.2rem;
   }
 }
 
@@ -138,9 +111,8 @@
   .card-image {
     width: 60%;
   }
-
-  a.foods-more {
-    bottom: 5rem;
+  .foods-more {
+    font-size: 1.5rem;
   }
 }
 
@@ -153,9 +125,8 @@
   .foods-middle-cards {
     top: 45vh;
   }
-
-  a.foods-more {
-    bottom: 6rem;
+  .foods-more {
+    font-size: 1.5rem;
   }
 }
 
@@ -164,9 +135,5 @@
   .foods-msg {
     top: 0.1vw;
     font-size: 4rem;
-  }
-
-  a.foods-more {
-    bottom: 7rem;
   }
 }

@@ -14,12 +14,20 @@ const Sayso = () => {
     <section className={styles.sayso}>
       <div className={styles.title}>What people say</div>
       <div className={styles.social}>
-        <Link to='/'>
+        <a
+          href='https://www.facebook.com/LaRollAlwaysFresh'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <img src={facebook} className={styles.facebook} alt='facebook' />
-        </Link>
-        <Link to='/'>
+        </a>
+        <a
+          href='https://business.google.com/groups/106389886199026729681/reviews'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <img src={google} className={styles.google} alt='google' />
-        </Link>
+        </a>
       </div>
       <div className={styles.quotes}>
         {quotes.map(edge => (

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import cx from 'classnames'
 import styles from './foods.module.scss'
 import Reveal from './reveal'
 
@@ -8,45 +9,9 @@ import { ScrollLinkTo } from './scrolllink'
 
 const Foods = () => {
   const data = useStaticQuery(query)
-  console.log(data)
   const topRightImage = data.banhmibasket.childImageSharp.fluid
   const veggieBottom = data.bottom.childImageSharp.fluid
-
   const cards = data.cards.edges
-  const cardStyles = [
-    styles.card1,
-    styles.card2,
-    styles.card3,
-    styles.card4,
-    styles.card5,
-    styles.card6
-  ]
-  const cardAnimate = [
-    [
-      ['-2vw', '2vw'],
-      ['-2vw', '4vw']
-    ],
-    [
-      ['-12.8vw', '-12.8vw'],
-      ['20.2vw', '20.2vw']
-    ],
-    [
-      ['-23.5vw', '-18vw'],
-      ['42.5vw', '48vw']
-    ],
-    [
-      ['-48vw', '-48vw'],
-      ['-16vw', '-16vw']
-    ],
-    [
-      ['-58.8vw', '-56vw'],
-      ['6vw', '8.8vw']
-    ],
-    [
-      ['-69.8vw', '-72vw'],
-      ['28.4vw', '23.6vw']
-    ]
-  ]
 
   return (
     <section className={styles.foods}>
@@ -67,7 +32,7 @@ const Foods = () => {
         {cards.map((edge, index) => (
           <RevealCard
             key={index}
-            clsName={cardStyles[index]}
+            clsName={styles.card}
             tops={cardAnimate[index][0]}
             lefts={cardAnimate[index][1]}
             fluidImage={edge.node.frontmatter.image.childImageSharp.fluid}
@@ -162,3 +127,29 @@ export const query = graphql`
     }
   }
 `
+export const cardAnimate = [
+  [
+    ['-2vw', '2vw'],
+    ['-2vw', '4vw']
+  ],
+  [
+    ['-12.8vw', '-12.8vw'],
+    ['20.2vw', '20.2vw']
+  ],
+  [
+    ['-23.5vw', '-18vw'],
+    ['42.5vw', '48vw']
+  ],
+  [
+    ['-48vw', '-48vw'],
+    ['-16vw', '-16vw']
+  ],
+  [
+    ['-58.8vw', '-56vw'],
+    ['6vw', '8.8vw']
+  ],
+  [
+    ['-69.8vw', '-72vw'],
+    ['28.4vw', '23.6vw']
+  ]
+]
