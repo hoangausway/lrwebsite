@@ -80,9 +80,9 @@ const Foods = () => {
         <Img fluid={veggieBottom} alt='veggie' />
       </div>
       <ScrollLinkTo
-        to='banhmi-crispypork'
+        to='banhmi'
         smooth
-        duration={500}
+        duration={800}
         className={styles.foodsMore}
       >
         Tap pictures to learn more...
@@ -102,7 +102,7 @@ const RevealCard = ({
   linkTo
 }) => {
   return (
-    <ScrollLinkTo to={linkTo} smooth duration={500}>
+    <ScrollLinkTo to={linkTo} smooth duration={800}>
       <Reveal
         clsName={clsName}
         transProps={{
