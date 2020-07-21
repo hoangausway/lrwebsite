@@ -1,5 +1,5 @@
 ---
-image: "../images/friedrice.png"
+image: "../images/dish-friedrice.png"
 linkto: "friedrice"
 cardorder: 4
 ---

@@ -22,6 +22,7 @@ const FoodList = () => {
 export default FoodList
 
 export const Food = ({ food, isLeft }) => {
+  console.log(food)
   const featured = food.featured.childImageSharp.fluid
   const bottom = food.bottom.childImageSharp.fluid
   return (

@@ -1,5 +1,5 @@
 ---
-image: "../images/ricepaperroll.png"
+image: "../images/dish-ricepaperroll.png"
 linkto: "ricepaperroll"
 cardorder: 1
 ---

@@ -1,5 +1,5 @@
 ---
-image: "../images/banhmi-crispypork.png"
-linkto: "banhmi-crispypork"
+image: "../images/dish-banhmi.png"
+linkto: "banhmi"
 cardorder: 6
 ---
