@@ -11,7 +11,7 @@ const Sayso = () => {
   const quotes = data.allMarkdownRemark.edges
 
   return (
-    <section className={styles.sayso}>
+    <section className={styles.sayso} id='sayso'>
       <div className={styles.title}>What people say</div>
       <div className={styles.social}>
         <a

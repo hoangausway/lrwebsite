@@ -5,9 +5,11 @@ const SizeTest = () => {
   return (
     <section className={styles.sectionTest}>
       <div className={styles.testMsg}>SIZES TEST</div>
-      <div style={{ color: '#e6e7e8', padding: '2rem' }}>
+      <div style={{ padding: '2rem', fontWeight: 'bold' }}>
+        <p className={styles.defaultLessThan376}>defaultLessThan376</p>
         <p className={styles.iphone376}>$iphoneP375</p>
         <p className={styles.iphonePlusP414}>$iphonePlusP414</p>
+        <p className={styles.iphoneL667}>$iphoneL667</p>
         <p className={styles.iphonePlusL736}>$iphonePlusL736</p>
         <p className={styles.ipadP768}>$ipadP768</p>
         <p className={styles.ipadP834}>$ipadProP834</p>

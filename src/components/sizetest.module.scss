@@ -7,11 +7,18 @@
 }
 
 // 
+.defaultLessThan376 {
+  color: #e6e7e8;
+}
 .iphone376 {
-  color: pink;
+  color: darkgray;
 }
 
 .iphonePlusP414 {
+  color: pink;
+}
+
+.iphoneL667 { // weird resolution 568px; 
   color: orange;
 }
 
@@ -24,11 +31,11 @@
 }
 
 .ipadP834 {
-  color: green;
+  color: greenyellow;
 }
 
 .ipadP1024 {
-  color: greenyellow;
+  color: green;
 }
 
 .ipadL1112 {
@@ -62,9 +69,15 @@
   }
 }
 
-@media (min-width: $iphonePlusL736) {
+@media (min-width: $iphoneL667) {
   .test-msg {
     color: orangered;
+  }
+}
+
+@media (min-width: $iphonePlusL736) {
+  .test-msg {
+    color: red;
   }
 }
 
