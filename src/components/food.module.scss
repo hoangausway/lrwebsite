@@ -13,7 +13,7 @@ $lineheight: 4rem;
   background-color: $food-color-bg;
 
   // defaul: right arrangement
-  .cat {
+  .group {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,6 +22,7 @@ $lineheight: 4rem;
     white-space: nowrap;
     font-size: 3rem;
     line-height: $lineheight;
+    
     color: $food-cat-color;
     transform-origin: 0 $lineheight;
     transform: rotate(90deg) translateX(-$lineheight);
@@ -94,7 +95,7 @@ $lineheight: 4rem;
   background-color: $food-color-bg;
 
   // defaul: right arrangement
-  .cat {
+  .group {
     position: absolute;
     top: 0;
     left: 0;
@@ -165,7 +166,7 @@ $lineheight: 4rem;
 }
 
 .foodleft {
-  .cat {
+  .group {
     transform: rotate(90deg) translateX(-$lineheight) translateY(-100vw)
       translateY($lineheight);
   }
@@ -194,7 +195,7 @@ $lineheight: 4rem;
   // @media
   @media (min-width: $mediaphonelandscape) {
     // 376px
-    .cat {
+    .group {
       font-size: 3rem;
     }
     .desc {
@@ -210,7 +211,7 @@ $lineheight: 4rem;
 
   @media (min-width: $mediatablet) {
     // 735px
-    .cat {
+    .group {
       font-size: 4rem;
     }
     .desc {
@@ -226,7 +227,7 @@ $lineheight: 4rem;
 
   @media (min-width: $mediatabletlandscape) {
     // 767px
-    .cat {
+    .group {
       font-size: 5rem;
     }
     .desc {
@@ -242,7 +243,7 @@ $lineheight: 4rem;
 
   @media (min-width: $mediadesktoplarge) {
     // 1919px
-    .cat {
+    .group {
       font-size: 5rem;
     }
     .desc {

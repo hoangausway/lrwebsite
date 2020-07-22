@@ -1,5 +1,5 @@
 ---
 image: "../images/dish-springroll.png"
-linkto: "springroll"
+linkto: "side"
 cardorder: 2
 ---

@@ -5,11 +5,14 @@
   padding: 0;
 }
 
-$fontfamily: "Gill Sans", sans-serif;
-$fontimpact: Impact, Charcoal, sans-serif;
+$fontgillsans: "Gill Sans", sans-serif; // baseline ratio: 0.161
+$fontgillsansbaseline: 0.161;
+
+$fontimpact: Impact, Charcoal, sans-serif; // baseline ratio: 0.101074
+$fontimpactbaseline: 0.101074;
 
 body {
-  font-family: $fontfamily;
+  font-family: $fontgillsans;
   font-size: 16px;
   font-weight: lighter;
   overflow-x: hidden;

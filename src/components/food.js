@@ -29,7 +29,7 @@ export const Food = ({ food, isLeft }) => {
       <section
         className={isLeft ? styles.foodleft : styles.food}
       >
-        <div className={styles.cat}>{food.group}</div>
+        <div className={styles.group}>{food.group}</div>
         <div className={styles.image}>
           <Img fluid={featured} alt='featured' />
         </div>

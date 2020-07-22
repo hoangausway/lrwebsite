@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './intro.module.scss'
-import wordcloud from '../img/wordcloud.svg'
 import Reveal from './reveal'
+
+// import wordcloud from '../img/wordcloud.svg'
+import lrCircle from '../img/lr-circle-right-bottom.svg'
 
 const Intro = () => {
   return (
@@ -16,7 +18,8 @@ const Intro = () => {
       >
         ALWAYS <br /> FRESH
       </Reveal>
-      <img src={wordcloud} className={styles.introWords} alt='words cloud' />
+      <img src={lrCircle} className={styles.introCircle} alt='la roll circle logo' />
+      {/* <img src={wordcloud} className={styles.introWords} alt='words cloud' /> */}
     </section>
   )
 }
