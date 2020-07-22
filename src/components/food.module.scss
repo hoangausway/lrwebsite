@@ -193,8 +193,7 @@ $lineheight: 4rem;
 .food,
 .foodleft {
   // @media
-  @media (min-width: $iphone376) {
-    // 376px
+  @media (min-width: $iphoneP375) {
     .group {
       font-size: 3rem;
     }
@@ -210,6 +209,25 @@ $lineheight: 4rem;
     }
     .image {
       width: 50%;
+    }
+  }
+
+  @media (min-width: $iphoneL667) {
+    .group {
+      font-size: 3rem;
+    }
+    .desc {
+      font-size: 1.3rem;
+    }
+    .flavours {
+      font-size: 1.3rem;
+      bottom: 5rem;
+    }
+    .contents {
+      font-size: 1.3rem;
+    }
+    .image {
+      width: 30%;
     }
   }
 

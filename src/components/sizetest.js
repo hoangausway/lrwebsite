@@ -6,7 +6,7 @@ const SizeTest = () => {
     <section className={styles.sectionTest}>
       <div className={styles.testMsg}>SIZES TEST</div>
       <div style={{ color: '#e6e7e8', padding: '2rem' }}>
-        <p className={styles.iphone376}>$iphone376</p>
+        <p className={styles.iphone376}>$iphoneP375</p>
         <p className={styles.iphonePlusP414}>$iphonePlusP414</p>
         <p className={styles.iphonePlusL736}>$iphonePlusL736</p>
         <p className={styles.ipadP768}>$ipadP768</p>

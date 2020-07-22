@@ -36,14 +36,23 @@
   left: 15vw;
 }
 
-@media (min-width: $iphone376) {
-  // 376
+@media (min-width: $iphoneP375) {
   .intro-circle {
     width: 90vw;
     height: auto;
   }
   .intro-msg {
     font-size: 18vw;
+  }
+}
+
+@media (min-width: $iphoneL667) {
+  .intro-circle {
+    height: 80vh;
+    width: auto;
+  }
+  .intro-msg {
+    font-size: 12vw;
   }
 }
 

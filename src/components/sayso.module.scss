@@ -55,13 +55,13 @@
 }
 
 // @media
-@media (min-width: $iphone376) {
+@media (min-width: $iphoneP375) {
   // 376px
   .title {
     font-size: 3rem;
   }
   .quotes {
-    width: 50%;
+    width: 70%;
   }
   .say {
     font-size: 1.4rem;

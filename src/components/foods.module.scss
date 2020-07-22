@@ -68,7 +68,7 @@
   width: 100%;
 }
 
-@media (min-width: $iphone376) {
+@media (min-width: $iphoneP375) {
   .foods {
     background-size: 80% auto;
   }
@@ -91,6 +91,28 @@
   }
 }
 
+@media (min-width: $iphoneL667) {
+  .foods {
+    background-size: 60% auto;
+  }
+  .foods-msg {
+    font-size: 2rem;
+  }
+  .foods-topright-img {
+    width: 50vw;
+  }
+  .foods-middle-cards {
+    top: 36vh;
+    left: 10vw;
+  }
+  .card-image {
+    width: 78%;
+  }
+  .foods-more {
+    bottom: 4rem;
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: $iphonePlusL736) {
   // 735px
   .foods {
