@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import styles from './sayso.module.scss'
 import Reveal from './reveal'
 import facebook from '../img/facebook.svg'
