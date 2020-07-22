@@ -7,26 +7,8 @@
   height: 100vh;
   position: relative;
   background-color: $intro-color-bg;
-  // background-image: url('../img/' + $intro-right-bottom-img);
-  // background-position: right bottom;
-  // background-repeat: no-repeat;
-  // background-size: 90% auto;
-  // background-attachment: scroll;
 }
 
-// .intro-overlay {
-//   width: 100vw;
-//   height: 100vh;
-//   position: relative;
-//   z-index: 20;
-//   background-color: $intro-color-bg;
-//   background-image: url('../img/' + $lr-logo-lights);
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-size: 100% auto;
-//   background-attachment: scroll;
-//   --animate-duration: 5s;
-// }
 .intro-circle {
   position: absolute;
   bottom: 0;
@@ -54,40 +36,40 @@
   left: 15vw;
 }
 
-@media (min-width: $mediaphonelandscape) {
+@media (min-width: $iphone376) {
   // 376
   .intro-circle {
-    height: 80vh;
+    width: 90vw;
+    height: auto;
+  }
+  .intro-msg {
+    font-size: 18vw;
+  }
+}
+
+@media (min-width: $iphonePlusL736) {
+  .intro-circle {
+    height: 90vh;
     width: auto;
   }
+
   .intro-msg {
-    font-size: 10vw;
-  }
-  .intro-words {
-    width: 40%;
-    bottom: 0;
-    left: 2vw;
+    font-size: 9vw;
   }
 }
 
-@media (min-width: $mediatablet) {
-  // 735
+@media (min-width: $ipadP768) {
   .intro-circle {
-    width: 70vh;
+    height: auto;
+    width: 90%;
   }
 
   .intro-msg {
-    font-size: 8vw;
-  }
-  .intro-words {
-    width: 40%;
-    bottom: 0;
-    left: 2vw;
+    font-size: 12vw;
   }
 }
 
-@media (min-width: 800px) {
-  // 800
+@media (min-width: $ipadProP834) {
   .intro-circle {
     width: 65vh;
     margin-bottom: -5rem;
@@ -95,15 +77,19 @@
   .intro-msg {
     font-size: 12vw;
   }
-  .intro-words {
-    width: 40%;
-    bottom: 3rem;
-    left: 7vw;
+}
+
+@media (min-width: $ipadL1024) {
+  .intro-circle {
+    width: 70vh;
+    margin-bottom: -5rem;
+  }
+  .intro-msg {
+    font-size: 12vw;
   }
 }
 
-@media (min-width: 1100px) {
-  // 1100
+@media (min-width: $ipadProL1112) {
   .intro-circle {
     width: 80vh;
     margin-bottom: 0;
@@ -111,28 +97,15 @@
   .intro-msg {
     font-size: 10vw;
   }
-  .intro-words {
-    width: 40%;
-    bottom: 3rem;
-    left: 7vw;
-  }
 }
 
-@media (min-width: 1600px) {
-  // 1600
+@media (min-width: $desktopL1680) {
   .intro-circle {
-    width: 80vh;
+    height: 85%;
+    width: auto;
     margin-bottom: -1rem;
   }
-}
-
-@media (min-width: $mediadesktoplarge) {
-  // 1919px
   .intro-msg {
-    font-size: 6vw;
-  }
-  .intro-circle {
-    width: 65vh;
-    margin-bottom: -1rem;
+    font-size: 12vw;
   }
 }

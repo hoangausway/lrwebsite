@@ -95,7 +95,7 @@ $toggle_height: 100vh;
   }
 }
 
-@media (min-width: $mediaphonelandscape) {
+@media (min-width: $iphone376) {
   // 376
   .navList a {
     font-size: 1.4rem;
@@ -103,7 +103,7 @@ $toggle_height: 100vh;
   }
 }
 
-@media (min-width: $mediatablet) {
+@media (min-width: $iphonePlusL736) {
   // 735
   .navList a {
     font-size: 2rem;
@@ -135,7 +135,7 @@ $toggle_height: 100vh;
   }
 }
 
-@media (min-width: $mediadesktoplarge) {
+@media (min-width: $desktopL1680) {
   // 1919px
   .navList a {
     font-size: 2.8rem;

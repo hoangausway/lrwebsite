@@ -68,37 +68,35 @@
   width: 100%;
 }
 
-@media (min-width: $mediaphonelandscape) {
-  // 376px
+@media (min-width: $iphone376) {
   .foods {
-    background-size: 50% auto;
+    background-size: 80% auto;
   }
   .foods-msg {
-    top: 0.1vw;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .foods-topright-img {
-    width: 40vw;
+    width: 60vw;
   }
   .foods-middle-cards {
-    top: 30vh;
+    top: 40vh;
     left: 10vw;
   }
   .card-image {
     width: 78%;
   }
   .foods-more {
-    font-size: 1.2rem;
+    bottom: 12rem;
+    font-size: 1.8rem;
   }
 }
 
-@media (min-width: $mediatablet) {
+@media (min-width: $iphonePlusL736) {
   // 735px
   .foods {
     background-size: 50% auto;
   }
   .foods-msg {
-    top: 0.1vw;
     font-size: 5rem;
   }
   .foods-topright-img {
@@ -116,10 +114,9 @@
   }
 }
 
-@media (min-width: $mediatabletlandscape) {
+@media (min-width: $ipadP768) {
   // 767px
   .foods-msg {
-    top: 0.1vw;
     font-size: 5rem;
   }
   .foods-middle-cards {
@@ -130,10 +127,39 @@
   }
 }
 
-@media (min-width: $mediadesktoplarge) {
+@media (min-width: $ipadL1024) {
+  .foods-msg {
+    font-size: 7rem;
+  }
+  .foods-middle-cards {
+    top: 50vh;
+  }
+  .foods-more {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: $ipadProL1112) {
+  .foods-msg {
+    font-size: 5rem;
+  }
+  .foods-middle-cards {
+    top: 50vh;
+  }
+  .foods-more {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: $desktopL1680) {
   // 1919px
   .foods-msg {
-    top: 0.1vw;
-    font-size: 4rem;
+    font-size: 6rem;
+  }
+  .foods-middle-cards {
+    top: 50vh;
+  }
+  .foods-more {
+    font-size: 3rem;
   }
 }

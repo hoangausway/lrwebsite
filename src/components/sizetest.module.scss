@@ -6,34 +6,99 @@
   background-color: #000;
 }
 
-// fadein when scrooling in
+// 
+.iphone376 {
+  color: pink;
+}
+
+.iphonePlusP414 {
+  color: orange;
+}
+
+.iphonePlusL736 {
+  color: orangered;
+}
+
+.ipadP768 {
+  color: yellow;
+}
+
+.ipadP834 {
+  color: green;
+}
+
+.ipadP1024 {
+  color: greenyellow;
+}
+
+.ipadL1112 {
+  color: blue;
+}
+
+.ipadL1366 {
+  color: blueviolet;
+}
+
+.desktopL1680 {
+  color: cyan;
+}
+
 .test-msg{
   font-size: 5vw;
   font-weight: bold;
   color: #e6e7e8;
   margin: 2rem;
-  
 }
 
-@media (min-width: $mediaphonelandscape) { // 374px
+@media (min-width: $iphone376) {
   .test-msg {
     color: pink;
   }
 }
 
-@media (min-width: $mediatablet) { // 735px
+@media (min-width: $iphonePlusP414) {
+  .test-msg {
+    color: orange;
+  }
+}
+
+@media (min-width: $iphonePlusL736) {
+  .test-msg {
+    color: orangered;
+  }
+}
+
+@media (min-width: $ipadP768) {
   .test-msg {
     color: yellow;
   }
 }
 
-@media (min-width: $mediatabletlandscape) { // 767px
+@media (min-width: $ipadProP834) {
   .test-msg {
     color: green;
   }
 }
 
-@media (min-width: $mediadesktoplarge) { // 1919px
+@media (min-width: $ipadL1024) {
+  .test-msg {
+    color: greenyellow;
+  }
+}
+
+@media (min-width: $ipadProL1112) {
+  .test-msg {
+    color: blue;
+  }
+}
+
+@media (min-width: $ipadProL1366) {
+  .test-msg {
+    color: blueviolet;
+  }
+}
+
+@media (min-width: $desktopL1680) {
   .test-msg {
     color: cyan;
   }
