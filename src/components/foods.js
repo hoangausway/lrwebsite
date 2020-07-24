@@ -47,7 +47,7 @@ const Foods = () => {
         to='/foods'
         className={styles.foodsMore}
       >
-        Tap pictures to learn more...
+        Learn more...
       </Link>
     </section>
   )
