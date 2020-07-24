@@ -72,6 +72,11 @@ $color-fresh-light: scotch-color("fresh", "light");
 $color-fresh-dark: scotch-color("fresh", "dark");
 $color-text-bg: scotch-color("primary", $opacity: "mid");
 
+// body
+  body {
+  background-color: scotch-color("secondary");
+}
+
 // nav
 $color-nav-bg: scotch-color("primary", "dark");
 $color-nav-switcher: $color-fg;
