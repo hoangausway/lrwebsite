@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import styles from './food.module.scss'
 import Img from 'gatsby-image'
 import Reveal from './reveal'
-import { ScrollLinkElement } from './scrolllink'
 
 const FoodList = () => {
   const data = useStaticQuery(query)
@@ -25,32 +24,28 @@ export const Food = ({ food, isLeft }) => {
   const featured = food.featured.childImageSharp.fluid
   const bottom = food.bottom.childImageSharp.fluid
   return (
-    <ScrollLinkElement name={food.bookmark}>
-      <section
-        className={isLeft ? styles.foodleft : styles.food}
+    <section id={food.bookmark} className={isLeft ? styles.foodleft : styles.food}>
+      <div className={styles.group}>{food.group}</div>
+      <div className={styles.image}>
+        <Img fluid={featured} alt='featured' />
+      </div>
+      <Reveal
+        clsName={styles.desc}
+        transProps={{
+          opacity: [1, 0]
+        }}
+        transition='opacity 3s ease'
       >
-        <div className={styles.group}>{food.group}</div>
-        <div className={styles.image}>
-          <Img fluid={featured} alt='featured' />
-        </div>
-        <Reveal
-          clsName={styles.desc}
-          transProps={{
-            opacity: [1, 0]
-          }}
-          transition='opacity 3s ease'
-        >
-          <p>{food.desc}</p>
-        </Reveal>
+        <p>{food.desc}</p>
+      </Reveal>
 
-        <div className={styles.flavours}>
-          <div className={styles.contents}>{food.flavours}</div>
-        </div>
-        <div className={styles.bottom}>
-          <Img fluid={bottom} alt='bottom' />
-        </div>
-      </section>
-    </ScrollLinkElement>
+      <div className={styles.flavours}>
+        <div className={styles.contents}>{food.flavours}</div>
+      </div>
+      <div className={styles.bottom}>
+        <Img fluid={bottom} alt='bottom' />
+      </div>
+    </section>
   )
 }
 

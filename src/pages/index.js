@@ -4,7 +4,7 @@ import Metadata from '../components/metadata'
 import Intro from '../components/intro'
 import Foods from '../components/foods'
 import Sayso from '../components/sayso'
-import FoodList from '../components/food'
+// import FoodList from '../components/food'
 
 const Index = () => {
   return (
@@ -13,7 +13,7 @@ const Index = () => {
       <Intro />
       <Foods />
       <Sayso />
-      <FoodList />
+      {/* <FoodList /> */}
     </Layout>
   )
 }

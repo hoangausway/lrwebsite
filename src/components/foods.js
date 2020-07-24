@@ -1,11 +1,10 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import cx from 'classnames'
 import styles from './foods.module.scss'
 import Reveal from './reveal'
 
-import { ScrollLinkTo } from './scrolllink'
+// import { ScrollLinkTo } from './scrolllink'
 
 const Foods = () => {
   const data = useStaticQuery(query)
@@ -44,14 +43,12 @@ const Foods = () => {
       <div className={styles.foodsBottomImg}>
         <Img fluid={veggieBottom} alt='veggie' />
       </div>
-      <ScrollLinkTo
-        to='banhmi'
-        smooth
-        duration={800}
+      <Link
+        to='/foods'
         className={styles.foodsMore}
       >
         Tap pictures to learn more...
-      </ScrollLinkTo>
+      </Link>
     </section>
   )
 }
@@ -67,21 +64,21 @@ const RevealCard = ({
   linkTo
 }) => {
   return (
-    <ScrollLinkTo to={linkTo} smooth duration={800}>
-      <Reveal
-        clsName={clsName}
-        transProps={{
-          opacity: [1, 0],
-          top: tops,
-          left: lefts
-        }}
-        transition='opacity 0.7s ease, top 2s cubic-bezier(0, 0, 0.23, 0.95), left 2s cubic-bezier(0, 0, 0.23, 0.95)'
-      >
-        <div className={imageClass}>
+    <Reveal
+      clsName={clsName}
+      transProps={{
+        opacity: [1, 0],
+        top: tops,
+        left: lefts
+      }}
+      transition='opacity 0.7s ease, top 2s cubic-bezier(0, 0, 0.23, 0.95), left 2s cubic-bezier(0, 0, 0.23, 0.95)'
+    >
+      <div className={imageClass}>
+        <Link to={`/foods#${linkTo}`}>
           <Img fluid={fluidImage} alt='card' />
-        </div>
-      </Reveal>
-    </ScrollLinkTo>
+        </Link>
+      </div>
+    </Reveal>
   )
 }
 

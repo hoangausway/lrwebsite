@@ -2,13 +2,9 @@
 
 .header {
   z-index: 1000;
-  position: absolute;
-  left: 0;
-  top: 0;
   overflow: hidden;
   width: 100%;
   transition: height 1s linear;
-  // height: 3rem; // to be set as style in code for animation
 }
 
 $toggle_height: 100vh;

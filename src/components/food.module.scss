@@ -1,11 +1,11 @@
 @import "../styles/theme-dark.scss";
 
 $lineheight: 4rem;
-
+$calib: 1rem;
 .food {
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,15 +24,15 @@ $lineheight: 4rem;
     line-height: $lineheight;
 
     color: $food-cat-color;
-    transform-origin: 0 $lineheight;
-    transform: rotate(90deg) translateX(-$lineheight);
+    transform-origin: 0 0;
+    transform: translateX($lineheight - $calib) rotate(90deg) ;
   }
 
   .image {
     position: absolute;
     top: 0;
     right: 0;
-    width: 70vw;
+    width: 70%;
     height: auto;
   }
 
@@ -40,8 +40,8 @@ $lineheight: 4rem;
     z-index: 1;
     font-size: 1.2rem;
     color: $food-desc-color;
-    width: 60vw;
-    padding: $top-left-align 1vw 1vw $top-left-align;
+    width: 60%;
+    padding: $top-left-align 1% 1% $top-left-align;
     text-align: left;
   }
 
@@ -52,7 +52,7 @@ $lineheight: 4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50vw;
+    width: 50%;
     padding-left: $top-left-align;
     transition: $transitionfadein;
     font-size: 1rem;
@@ -79,7 +79,7 @@ $lineheight: 4rem;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
   }
 }
@@ -87,11 +87,11 @@ $lineheight: 4rem;
 .foodleft {
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   background-color: $food-color-bg;
 
   // defaul: right arrangement
@@ -105,15 +105,15 @@ $lineheight: 4rem;
     font-size: 3rem;
     line-height: $lineheight;
     color: $food-cat-color;
-    transform-origin: 0 $lineheight;
-    transform: rotate(90deg) translateX(-$lineheight);
+    transform-origin: 0 0;
+    transform: translateX($lineheight) rotate(90deg);
   }
 
   .image {
     position: absolute;
     top: 0;
     right: 0;
-    width: 70vw;
+    width: 70%;
     height: auto;
   }
 
@@ -121,8 +121,8 @@ $lineheight: 4rem;
     z-index: 1;
     font-size: 1.2rem;
     color: $food-desc-color;
-    width: 60vw;
-    padding: $top-left-align 1vw 1vw $top-left-align;
+    width: 60%;
+    padding: $top-left-align 1% 1% $top-left-align;
     text-align: left;
   }
 
@@ -130,10 +130,11 @@ $lineheight: 4rem;
     z-index: 10;
     position: absolute;
     bottom: 5rem;
+    right: $top-left-align;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50vw;
+    width: 50%;
     padding-left: $top-left-align;
     transition: $transitionfadein;
     font-size: 1rem;
@@ -160,28 +161,29 @@ $lineheight: 4rem;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
   }
 }
 
 .foodleft {
   .group {
-    transform: rotate(90deg) translateX(-$lineheight) translateY(-100vw)
-      translateY($lineheight);
+    // transform: rotate(90deg) translateX($lineheight) translateY(-100vw) translateY($lineheight);
+    transform-origin: 100vw 0;
+    transform: translateX($calib) rotate(90deg) translateX(100vw);
   }
   .image {
     left: 0;
     transform: scaleX(-1); // temp
   }
   .desc {
-    transform: translateX(40vw);
-    padding: $top-left-align $top-left-align 1vw 1vw;
+    // transform: translateX(61%);
+    padding: $top-left-align $top-left-align 1% 1%;
     text-align: right;
   }
   .flavours {
     align-items: flex-end;
-    transform: translateX(43vw);
+    // transform: translateX(80%);
   }
   .contents {
     text-align: right;
@@ -234,6 +236,7 @@ $lineheight: 4rem;
   @media (min-width: $iphonePlusL736) {
     .group {
       font-size: 4rem;
+      transform: translateX($lineheight) rotate(90deg) ;
     }
     .desc {
       font-size: 1.5rem;
@@ -343,6 +346,15 @@ $lineheight: 4rem;
     }
     .image {
       width: 30%;
+    }
+  }
+}
+
+@media (min-width: $ipadL1024) {
+  .foodleft {
+    .group {
+      transform-origin: $bodyinside 0;
+      transform: rotate(90deg) translateX($bodyinside);
     }
   }
 }

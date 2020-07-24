@@ -4,11 +4,11 @@ import Footer from './footer'
 import SizeTest from './sizetest'
 import ColorPalette from './colorpalette'
 
-import '../styles/theme-dark.scss'
+import styles from './layout.module.scss'
 
 const Layout = props => {
   return (
-    <div>
+    <div className={styles.layout}>
       <Header />
       {props.children}
       <SizeTest />

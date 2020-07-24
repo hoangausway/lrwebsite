@@ -1,0 +1,12 @@
+@import "../styles/theme-dark.scss";
+
+.layout {
+  padding: 0;
+}
+
+// @media
+@media (min-width: $ipadL1024) {
+  .layout {
+    padding: 0 $bodypadding;
+  }
+}
