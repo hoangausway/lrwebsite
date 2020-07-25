@@ -55,7 +55,6 @@ export const query = graphql`
       filter: {
         frontmatter: {
           active: { eq: "yes" }
-          bottom: { childImageSharp: { fluid: { src: {} } } }
         }
         fileAbsolutePath: { regex: "/foods/" }
       }

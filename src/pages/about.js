@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Metadata from '../components/metadata'
-import truganina from '../data/images/truganina.jpg'
+import truganina from '../data/images/truganina.png'
 
 const About = () => {
   return (
