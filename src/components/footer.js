@@ -16,9 +16,12 @@ const Footer = () => {
       <div className={styles.menu}>
         <p>SITEMAP</p>
         <Link to='/'>Home</Link>
+        <Link to='/foods'>Foods</Link>
         <Link to='/#sayso'>What people say</Link>
         <Link to='/about'>About</Link>
-        <Link to='/beyourboss'>Be your own boss</Link>
+        <Link to='/beyourboss' className={styles.beboss}>
+          Be your own boss
+        </Link>
       </div>
       <div className={styles.contact}>
         <p>CONTACT</p>
