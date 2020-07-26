@@ -68,7 +68,7 @@ export const Location = ({ styles, name, address, phone, image }) => {
     <div className={styles.location}>
       <h3>{name}</h3>
       <p>{address}</p>
-      <p className={styles.phone}>{phone}</p>
+      <p className={styles.phone}>Call us at: <a href={`tel:${phone}`}>{phone}</a></p>
       <Img fluid={image} alt={name} />
     </div>
   )
