@@ -150,19 +150,29 @@
   }
 }
 
-@media (min-width: $ipadL1024) {
-  .foods-msg {
-    font-size: 7rem;
-  }
+@media (min-width: $ipadProP834) {
   .foods-middle-cards {
-    top: 50vh;
+    top: 40vh;
   }
   .foods-more {
-    bottom: 14rem;
+    bottom: 10rem;
     font-size: 2.5rem;
   }
   .card-image {
-    width: 100%;
+    width: 80%;
+  }
+}
+
+@media (min-width: $ipadL1024) {
+  .foods-msg {
+    font-size: 5rem;
+  }
+  .foods-more {
+    bottom: 8rem;
+    font-size: 2.5rem;
+  }
+  .card-image {
+    width: 80%;
   }
 }
 

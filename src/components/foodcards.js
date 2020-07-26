@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import styles from './foods.module.scss'
+import styles from './foodcards.module.scss'
 import Reveal from './reveal'
 
 // import { ScrollLinkTo } from './scrolllink'

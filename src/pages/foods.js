@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Metadata from '../components/metadata'
-import FoodList from '../components/food'
+import FoodList from '../components/foodlist'
 
 const Foods = () => {
   return (

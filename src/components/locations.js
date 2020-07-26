@@ -15,7 +15,7 @@ const Locations = () => {
       <img src={lrmaps} alt='la roll maps' className={styles.map} />
       {data.allMarkdownRemark.edges.map((edge, index) => (
         <Location
-          clsName={styles.location}
+          styles={styles}
           key={edge.node.id}
           name={edge.node.frontmatter.location_name}
           address={edge.node.frontmatter.location_address}
@@ -63,12 +63,12 @@ export const query = graphql`
   }
 `
 
-export const Location = ({ clsName, name, address, phone, image }) => {
+export const Location = ({ styles, name, address, phone, image }) => {
   return (
-    <div className={clsName}>
+    <div className={styles.location}>
       <h3>{name}</h3>
       <p>{address}</p>
-      <p>{phone}</p>
+      <p className={styles.phone}>{phone}</p>
       <Img fluid={image} alt={name} />
     </div>
   )
