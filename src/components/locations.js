@@ -4,8 +4,7 @@ import styles from './locations.module.scss'
 import lrmaps from '../data/images/lrmaps.png'
 import truganina from '../data/images/truganina.png'
 import laverton from '../data/images/laverton.png'
-
-import derrimut from '../data/images/derrimut.jpg'
+import derrimut from '../data/images/derrimut.png'
 
 const Locations = () => {
   return (
