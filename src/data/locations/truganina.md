@@ -1,11 +1,11 @@
 ---
-active: "yes"
-order: "01"
-name: "TRUGANINA"
-phone: '0434 917 195'
-address: "Unit 12, 133 Elgar Road, Derrimut VIC 3030"
-desc: "Est voluptate in sit enim. Lorem et veniam anim nisi."
-location-image: "../images/truganina.png"
-bookmark: "truganina"
-date: "2020-07-24"
+location_active: "yes"
+location_order: "01"
+location_name: "La Roll TRUGANINA"
+location_phone: '0434 917 195'
+location_address: "Unit 12, 133 Elgar Road, Derrimut VIC 3029"
+location_desc: "Est voluptate in sit enim. Lorem et veniam anim nisi."
+location_image: "../images/truganina.png"
+location_bookmark: "truganina"
+location_date: "2020-07-24"
 ---

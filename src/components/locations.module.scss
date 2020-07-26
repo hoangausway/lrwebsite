@@ -6,11 +6,18 @@
   background-color: white;
   padding: 2rem;
 
-  div {
-    img {
-      width: 100%;
-      height: auto;
-      padding-top: 0.5rem;
-    }
+  .map {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5rem;
+  }
+}
+
+.location {
+  padding-top: 2rem;
+  img {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5rem;
   }
 }

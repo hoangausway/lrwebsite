@@ -1,48 +1,75 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import styles from './locations.module.scss'
 
 import lrmaps from '../data/images/lrmaps.png'
-import truganina from '../data/images/truganina.png'
-import laverton from '../data/images/laverton.png'
-import derrimut from '../data/images/derrimut.png'
 
 const Locations = () => {
+  const data = useStaticQuery(query)
+  console.log(data.allMarkdownRemark.edges)
   return (
     <section className={styles.locations}>
       <h1>Locations</h1>
-      <div style={{ paddingTop: '2rem' }}>
-        <img src={lrmaps} alt='la roll maps' />
-        <h3>La Roll TRUGANINA</h3>
-        <p>
-          Unit 1, 5 Connect Road
-          <br />
-          Truganina VIC 3029
-        </p>
-        <p>0434 917 195</p>
-        <img src={truganina} alt='truganina' />
-      </div>
-      <div style={{ paddingTop: '2rem' }}>
-        <h3>La Roll DERRIMUT</h3>
-        <p>
-          Unit 12, 133 Elgar Road
-          <br />
-          Derrimut VIC 3030
-        </p>
-        <p>0468 445 133</p>
-        <img src={derrimut} alt='derrimut' />
-      </div>
-      <div style={{ paddingTop: '2rem' }}>
-        <h3>La Roll LAVERTON</h3>
-        <p>
-          Unit 3A, 141 Dohertys Road
-          <br />
-          Laverton North VIC 3029
-        </p>
-        <p>0468 460 141</p>
-        <img src={laverton} alt='laverton' />
-      </div>
+      <img src={lrmaps} alt='la roll maps' className={styles.map} />
+      {data.allMarkdownRemark.edges.map((edge, index) => (
+        <Location
+          clsName={styles.location}
+          key={edge.node.id}
+          name={edge.node.frontmatter.location_name}
+          address={edge.node.frontmatter.location_address}
+          phone={edge.node.frontmatter.location_phone}
+          image={edge.node.frontmatter.location_image.childImageSharp.fluid}
+        />
+      ))}
     </section>
   )
 }
 
 export default Locations
+
+export const query = graphql`
+  {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { location_active: { eq: "yes" } }
+        fileAbsolutePath: { regex: "/locations/" }
+      }
+      sort: { order: ASC, fields: frontmatter___location_order }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            location_active
+            location_address
+            location_bookmark
+            location_desc
+            location_name
+            location_phone
+            location_image {
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 750) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+export const Location = ({ clsName, name, address, phone, image }) => {
+  return (
+    <div className={clsName}>
+      <h3>{name}</h3>
+      <p>{address}</p>
+      <p>{phone}</p>
+      <Img fluid={image} alt={name} />
+    </div>
+  )
+}

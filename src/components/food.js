@@ -1,8 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import styles from './food.module.scss'
 import Img from 'gatsby-image'
 import Reveal from './reveal'
+import styles from './food.module.scss'
 
 const FoodList = () => {
   const data = useStaticQuery(query)
