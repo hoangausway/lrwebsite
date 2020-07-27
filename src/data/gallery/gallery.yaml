@@ -1,0 +1,15 @@
+- gal_title: Image 1
+  gal_0rder: 01
+  gal_image: ./image1.jpg
+  - gal_title: Image 2
+  gal_0rder: 02
+  gal_image: ./image2.jpg
+  - gal_title: Image 3
+  gal_0rder: 03
+  gal_image: ./image3.jpg
+  - gal_title: Image 4
+  gal_0rder: 04
+  gal_image: ./image4.jpg
+  - gal_title: Image 5
+  gal_0rder: 05
+  gal_image: ./image5.jpg

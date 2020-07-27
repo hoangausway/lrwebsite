@@ -8,7 +8,7 @@ $scotch-colors: (
   "primary": (
     "base": black,
     "light": #4b4647,
-    "dark": #231f20,
+    "dark": #2d2d2d,
   ),
   "secondary": (
     "base": #e6e7e8,
@@ -67,6 +67,7 @@ $scotch-opacity: (
 $color-accent-light: scotch-color("accent", "light");
 $color-accent-dark: scotch-color("accent", "dark");
 $color-bg: scotch-color("primary");
+$color-primary-dark: scotch-color("primary", "dark");
 $color-fg: scotch-color("secondary");
 $color-fresh-light: scotch-color("fresh", "light");
 $color-fresh-dark: scotch-color("fresh", "dark");
@@ -78,7 +79,7 @@ $color-text-bg: scotch-color("primary", $opacity: "mid");
 }
 
 // nav
-$color-nav-bg: scotch-color("primary", "dark");
+$color-nav-bg: $color-primary-dark;
 $color-nav-switcher: $color-fg;
 
 // intro
@@ -98,7 +99,7 @@ $food-flavours-color: $color-fresh-light;
 $food-flavours-contents-bg: $color-text-bg;
 
 // sayso
-$sayso-color-bg: scotch-color("primary", "dark");
+$sayso-color-bg: $color-primary-dark;
 $sayso-color-fg: $color-fg;
 $sayso-color-title: $color-fg;
 $sayso-color-say: $color-fresh-light;
@@ -109,7 +110,7 @@ $locations-color-bg: $color-fg;
 
 // footer
 $footer-color-fg: $color-fg;
-$footer-color-bg: $color-bg;
+$footer-color-bg: $color-primary-dark;
 $footer-color-fg-dark: scotch-color("secondary", "dark");
 $footer-color-link: $color-fresh-dark;
 $footer-color-link-beboss: $color-fresh-light;
