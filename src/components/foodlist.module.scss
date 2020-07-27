@@ -1,5 +1,17 @@
 @import "../styles/theme-dark.scss";
 
+// top section
+.special {
+  h3 {
+    padding: 2rem;
+    font-size: 2rem;;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+// food
 $lineheight: 4rem;
 $calib: 1rem;
 .food {

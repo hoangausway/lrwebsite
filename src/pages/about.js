@@ -1,20 +1,18 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Metadata from '../components/metadata'
+
+import styles from './about.module.scss'
 import truganina from '../data/images/truganina.png'
 
 const About = () => {
   return (
     <Layout>
       <Metadata title='About' description='This is my about page' />
-      <div style={{ marginTop: '3rem' }}>
+      <section className={styles.about}>
         <h1>About Page</h1>
-        <img
-          src={truganina}
-          alt='truganina'
-          style={{ width: '100%', height: 'auto' }}
-        />
-      </div>
+        <img src={truganina} alt='truganina' />
+      </section>
     </Layout>
   )
 }

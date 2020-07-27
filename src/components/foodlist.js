@@ -3,11 +3,15 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Reveal from './reveal'
 import styles from './foodlist.module.scss'
-
+import lrfoods from '../img/lrfoods.png'
 const FoodList = () => {
   const data = useStaticQuery(query)
   return (
     <>
+      <section className={styles.special}>
+        {/* <h3>La Roll's Foods</h3> */}
+        <img src={lrfoods} alt='lr foods' />
+      </section>
       {data.allMarkdownRemark.edges.map((edge, index) => (
         <Food
           key={edge.node.id}

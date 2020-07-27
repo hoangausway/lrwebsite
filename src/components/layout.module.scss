@@ -5,8 +5,9 @@
 }
 
 // @media
-@media (min-width: $ipadL1024) {
-  .layout {
+// @media (min-width: $ipadL1024) {
+  @media (min-width: $ipadProL1112) {
+    .layout {
     padding: 0 $bodypadding;
   }
 }
