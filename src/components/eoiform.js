@@ -19,14 +19,14 @@ const ExpressInterest = () => {
         <input type='hidden' name='form-name' value='contact' />
 
         <div className={styles.formgrid}>
-          <input type='text' name='name' id='name' />
           <label htmlFor='name'>Name</label>
-          <input type='text' name='phone' id='phone' />
+          <input type='text' name='name' id='name' />
           <label htmlFor='phone'>Phone</label>
-          <input type='text' name='email' id='email' />
+          <input type='text' name='phone' id='phone' />
           <label htmlFor='email'>Email</label>
-          <textarea name='message' id='message' rows='6' />
+          <input type='text' name='email' id='email' />
           <label htmlFor='message'>Message</label>
+          <textarea name='message' id='message' rows='6' />
           <input type='submit' value='Send Message' />
           <input type='reset' value='Clear' />
         </div>

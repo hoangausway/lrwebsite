@@ -12,7 +12,9 @@ const Beyourboss = () => {
       <Metadata title='Be your boss' description='Be yur our boss page' />
       <section className={styles.beyourboss}>
         <div className={styles.haybails}>
-          <a href='#eiform'><p>Be Your Own Boss</p></a>
+          <p>
+            <a href='#eiform'>Be Your Own Boss</a>
+          </p>
           <img src={haybails} alt='haybails' />
         </div>
         <EOIForm className={styles.form} />
