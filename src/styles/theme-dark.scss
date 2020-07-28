@@ -74,7 +74,7 @@ $color-fresh-dark: scotch-color("fresh", "dark");
 $color-text-bg: scotch-color("primary", $opacity: "mid");
 
 // body
-  body {
+body {
   background-color: scotch-color("secondary");
 }
 
@@ -114,6 +114,15 @@ $footer-color-bg: $color-primary-dark;
 $footer-color-fg-dark: scotch-color("secondary", "dark");
 $footer-color-link: $color-fresh-dark;
 $footer-color-link-beboss: $color-fresh-light;
+
+// epression of interest form
+$eiform-legend: scotch-color("accent");
+$eiform-bg: "none";
+$eiform-label-color: scotch-color("fresh", "dark");
+$eiform-input-text: scotch-color("primary", "light");
+$eiform-button-color: scotch-color("secondary", "light");
+$eiform-clear-button-bg: scotch-color("secondary", "dark");
+$eiform-send-button-bg: scotch-color("accent");
 
 /* SVG codes - NOT IN USED */
 $intro-right-bottom-svgcode: svg-lr-circle-right-bottom($color-fg);
