@@ -15,7 +15,7 @@ const EISuccess = () => {
       <section className={styles.success}>
         <p className={styles.thanks}>Thank you for your interest!</p>
         <p className={styles.willcontact}>
-          We will contact you in the next 48 hours
+          We will contact you for details
         </p>
         <img src={beboss} alt='be your boss' width='100%' />
       </section>
