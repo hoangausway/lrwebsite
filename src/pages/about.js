@@ -28,10 +28,10 @@ export const AboutUs = () => {
   return (
     <div>
       <p>
-        <strong>La Roll</strong> is providing fresh and tasty breakfast and
-        lunch in industrial zones. Each of our stores were opened with these
-        simple desires in mind. We prepare all our rolls, salads, and meals
-        fresh in each La Roll's kitchen.
+        <span style={{ fontWeight: 'bold', color: '#a61c24' }}>La Roll</span> is
+        providing fresh and tasty breakfast and lunch in industrial zones. Each
+        of our stores were opened with these simple desires in mind. We prepare
+        all our rolls, salads, and meals fresh in each La Roll's kitchen.
       </p>
       <p>
         The first La Roll was opened in Laverton North in 2017, born from a love
