@@ -26,16 +26,20 @@ export default About
 
 export const AboutUs = () => {
   return (
-    <p>
-      <strong>La Roll</strong> is providing fresh and tasty breakfast and lunch
-      in industrial zones. Each of our stores were opened with these simple
-      desires in mind. We prepare all our rolls, salads, and meals fresh in each
-      La Roll's kitchen.
-      <br />
-      The first La Roll was opened in Laverton North in 2017, born from a love
-      of Vietnamese street food and a desire to share our commitment to quality
-      with the rest of Melbourne and now Australia. The next two stores were La
-      Roll Truganina opened in 2018 and La Roll Derrimut in 2019.
-    </p>
+    <div>
+      <p>
+        <strong>La Roll</strong> is providing fresh and tasty breakfast and
+        lunch in industrial zones. Each of our stores were opened with these
+        simple desires in mind. We prepare all our rolls, salads, and meals
+        fresh in each La Roll's kitchen.
+      </p>
+      <p>
+        The first La Roll was opened in Laverton North in 2017, born from a love
+        of Vietnamese street food and a desire to share our commitment to
+        quality with the rest of Melbourne and now Australia. The next two
+        stores were La Roll Truganina opened in 2018 and La Roll Derrimut in
+        2019.
+      </p>
+    </div>
   )
 }
