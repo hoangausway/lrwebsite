@@ -106,7 +106,7 @@ $sayso-color-say: $color-fresh-light;
 $sayso-color-who: scotch-color("fresh", "dark");
 
 // locations
-$locations-color-bg: $color-fg;
+$locations-color-bg: scotch-color("secondary", "light");
 
 // footer
 $footer-color-fg: $color-fg;

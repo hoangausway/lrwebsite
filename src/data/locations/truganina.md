@@ -8,4 +8,5 @@ location_desc: "Est voluptate in sit enim. Lorem et veniam anim nisi."
 location_image: "../images/truganina.png"
 location_bookmark: "truganina"
 location_date: "2020-07-24"
+location_open: "Monday - Friday, 6:00AM - 2:30PM"
 ---

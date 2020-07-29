@@ -9,7 +9,6 @@ const FoodList = () => {
   return (
     <>
       <section className={styles.special}>
-        {/* <h3>La Roll's Foods</h3> */}
         <img src={lrfoods} alt='lr foods' />
       </section>
       {data.allMarkdownRemark.edges.map((edge, index) => (

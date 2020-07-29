@@ -10,7 +10,7 @@ const Gallery = () => {
 
   return (
     <section className={styles.gallery}>
-      <h1>Photo Gallery</h1>
+      <h1>Moments...</h1>
       <div className={styles.container}>
         {photos.map(photo => (
           <div key={photo.node.id} className={styles.item}>
