@@ -1,9 +1,14 @@
 @import "../styles/theme-dark.scss";
 
 .gallery {
-  padding: 1.5rem;
-  h1 {
+  padding: 1rem;
+  background-color: $about-gallery-bg;
+
+  p {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-fg;
   }
 }
 
@@ -12,7 +17,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row wrap;
-  margin: 0.5vw;
   font-size: 0;
 }
 
@@ -29,8 +33,7 @@
 
   $offset: 3%;
   $wh: 100% - 2 * $offset;
-  $thickness: 3px;
-  $radius: 10px;
+  $thickness: 2px;
 
   .box {
     position: absolute;
@@ -38,8 +41,7 @@
     left: $offset;
     width: $wh;
     height: $wh;
-    border: $thickness solid rgba($color: #a61c24, $alpha: 0.4);
-    border-radius: 3px;
+    border: $thickness solid rgba($color: #a61c24, $alpha: 0.8);
     background-color: transparent;
   }
 }

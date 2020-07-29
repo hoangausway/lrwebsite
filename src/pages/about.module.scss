@@ -3,11 +3,8 @@
 .about {
   padding: 1.2rem;
   background-color: $locations-color-bg;
-  h1 {
-    padding-bottom: 1rem;
-  }
-  img {
-    width: 100%;
-    height: auto;
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 }
