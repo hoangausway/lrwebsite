@@ -12,17 +12,35 @@
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row wrap;
-  margin: .5vw;
+  margin: 0.5vw;
   font-size: 0;
 }
 
 .item {
+  position: relative;
   flex: auto;
   width: 200px;
-  padding: 0.1rem;
+  padding: 0.3rem;
+
   div div div img {
     width: 100%;
     height: auto;
+  }
+
+  $offset: 3%;
+  $wh: 100% - 2 * $offset;
+  $thickness: 3px;
+  $radius: 10px;
+
+  .box {
+    position: absolute;
+    top: $offset;
+    left: $offset;
+    width: $wh;
+    height: $wh;
+    border: $thickness solid rgba($color: #a61c24, $alpha: 0.4);
+    border-radius: 3px;
+    background-color: transparent;
   }
 }
 

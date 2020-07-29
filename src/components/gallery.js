@@ -13,19 +13,24 @@ const Gallery = () => {
       <h1>Moments...</h1>
       <div className={styles.container}>
         {photos.map(photo => (
-          <div key={photo.node.id} className={styles.item}>
-            <Img
-              fluid={photo.node.gal_image.childImageSharp.fluid}
-              alt={photo.node.gal_title}
-            />
-          </div>
+          <ImgBox key={photo.node.id} photoNode={photo.node} styles={styles} />
         ))}
-      </div>{' '}
+      </div>
     </section>
   )
 }
 
 export default Gallery
+
+export const ImgBox = ({ photoNode, styles }) => (
+  <div className={styles.item}>
+    <Img
+      fluid={photoNode.gal_image.childImageSharp.fluid}
+      alt={photoNode.gal_title}
+    />
+    <div className={styles.box} />
+  </div>
+)
 
 export const query = graphql`
   {
