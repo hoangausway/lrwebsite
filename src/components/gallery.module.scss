@@ -31,16 +31,19 @@
     height: auto;
   }
 
-  $offset: 3%;
-  $wh: 100% - 2 * $offset;
+  $woffset: 2%;
+  $hoffset: 3%;
+  $w: 100% - 2 * $woffset;
+  $h: 100% - 2 * $hoffset;
+
   $thickness: 2px;
 
   .box {
     position: absolute;
-    top: $offset;
-    left: $offset;
-    width: $wh;
-    height: $wh;
+    top: $hoffset;
+    left: $woffset;
+    width: $w;
+    height: $h;
     border: $thickness solid rgba($color: #a61c24, $alpha: 0.8);
     background-color: transparent;
   }

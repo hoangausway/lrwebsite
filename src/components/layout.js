@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
-import SizeTest from './sizetest'
-import ColorPalette from './colorpalette'
+// import SizeTest from './sizetest'
+// import ColorPalette from './colorpalette'
 
 import styles from './layout.module.scss'
 
@@ -11,8 +11,8 @@ const Layout = props => {
     <div className={styles.layout}>
       <Header />
       {props.children}
-      <SizeTest />
-      <ColorPalette />
+      {/* <SizeTest />
+      <ColorPalette /> */}
       <Footer />
     </div>
   )
