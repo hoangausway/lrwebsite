@@ -3,15 +3,16 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Reveal from './reveal'
 import styles from './foodlist.module.scss'
-import lrfoods from '../img/lrfoods.png'
+// import lrfoods from '../img/lrfoods.png'
 const FoodList = () => {
   const data = useStaticQuery(query)
   return (
     <>
       <section className={styles.special}>
-        <img src={lrfoods} alt='lr foods' />
+        <Img fluid={data.foodad.childImageSharp.fluid} alt='food ad' />
       </section>
-      {data.allMarkdownRemark.edges.map((edge, index) => (
+      <h1>La Roll's Foods</h1>
+      {data.foods.edges.map((edge, index) => (
         <Food
           key={edge.node.id}
           styles={styles}
@@ -58,7 +59,15 @@ export const Food = ({ styles, food, isLeft }) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark(
+    foodad: file(relativePath: { eq: "images/foodad.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 750) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+
+    foods: allMarkdownRemark(
       filter: {
         frontmatter: { active: { eq: "yes" } }
         fileAbsolutePath: { regex: "/foods/" }

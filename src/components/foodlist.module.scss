@@ -2,13 +2,13 @@
 
 // top section
 .special {
-  h3 {
-    padding: 2rem;
-    font-size: 2rem;;
-  }
-  img {
-    width: 100%;
-  }
+  margin-bottom: 0;
+}
+
+h1 {
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  color: $color-fg;
+  background-color: $color-primary-dark;
 }
 
 // food
@@ -37,7 +37,7 @@ $calib: 1rem;
 
     color: $food-cat-color;
     transform-origin: 0 0;
-    transform: translateX($lineheight - $calib) rotate(90deg) ;
+    transform: translateX($lineheight - $calib) rotate(90deg);
   }
 
   .image {
@@ -248,7 +248,7 @@ $calib: 1rem;
   @media (min-width: $iphonePlusL736) {
     .group {
       font-size: 4rem;
-      transform: translateX($lineheight) rotate(90deg) ;
+      transform: translateX($lineheight) rotate(90deg);
     }
     .desc {
       font-size: 1.5rem;
